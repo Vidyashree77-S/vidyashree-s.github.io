@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Vidyashree S — Portfolio</title>
+  <style>
+    :root{--bg:#f7f8fb;--card:#ffffff;--muted:#6b7280;--accent:#0f172a}
+    *{box-sizing:border-box}body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0;background:var(--bg);color:var(--accent);-webkit-font-smoothing:antialiased}
+    .container{max-width:980px;margin:48px auto;padding:24px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,#e6eef8,#f3f6ff);display:flex;align-items:center;justify-content:center;font-weight:600;color:#0b1220}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .card{background:var(--card);border-radius:12px;padding:20px;box-shadow:0 6px 18px rgba(15,23,42,0.06);margin-top:20px}
+    .grid{display:grid;grid-template-columns:1fr 300px;gap:20px}
+    @media (max-width:880px){.grid{grid-template-columns:1fr}header{flex-direction:row}
+      .avatar{width:76px;height:76px}}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:#eef2ff;padding:8px 10px;border-radius:999px;font-size:13px;color:#0f172a}
+    .project{border-left:3px solid #e0e7ff;padding:12px;margin-bottom:12px}
+    .meta{color:var(--muted);font-size:13px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600}
+    .btn-primary{background:#0b5cff;color:white}
+    .contact-list{list-style:none;padding:0;margin:0}
+    .contact-list li{margin-bottom:8px;color:var(--muted)}
+    footer{text-align:center;color:var(--muted);font-size:13px;margin-top:28px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">VS</div>
+      <div>
+        <h1>Vidyashree S</h1>
+        <p class="lead">MCA graduate specializing in Software Development & Machine Learning.</p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card">
+          <h2 style="margin-top:0">About</h2>
+          <p class="meta">I'm a recent MCA graduate focused on building full-stack applications and machine learning solutions. I enjoy developing data-driven projects, working with real-world datasets, and delivering clean, user-friendly software.</p>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <h2 style="margin-top:0">Projects</h2>
+
+          <div class="project">
+            <h3 style="margin:0">Food Waste Management System</h3>
+            <p class="meta">Full‑stack Django-based platform enabling NGOs, donors, and receivers to manage surplus food efficiently with secure authentication, dashboards, and real-time allocation.</p>
+          </div>
+
+          <div class="project">
+            <h3 style="margin:0">Credit Card Fraud Detection</h3>
+            <p class="meta">Machine learning project using preprocessing, SMOTE, classification models, and metrics like Precision, Recall, F1‑score, and ROC‑AUC. Deployed as a REST API.</p>
+          </div>
+
+          <div class="project">
+            <h3 style="margin:0">GAN-Based Social Network Data Augmentation</h3>
+            <p class="meta">Research work using Generative Adversarial Networks with differential privacy to generate secure synthetic graph data for social‑network analysis.</p>
+          </div>
+
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <h2 style="margin-top:0">Experience</h2>
+
+          <div class="project">
+            <h3 style="margin:0">BHEL – Internship Trainee</h3>
+            <p class="meta">Completed certified internship at BHEL with exposure to industrial workflow, professional documentation, structured reporting, and hands‑on experience in project processes.</p>
+          </div>
+
+          <div class="project">
+            <h3 style="margin:0">DTech Endeavours – Software Development Intern</h3>
+            <p class="meta">Worked on software development tasks, participated in team meetings, and contributed to real project modules with professional guidance and certified completion.</p>
+          </div>
+
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <h2 style="margin-top:0">Education</h2>
+          <p class="meta" style="margin:0">MCA — Dayananda Sagar College of Engineering, Bangalore</p>
+        </section>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3 style="margin-top:0">Skills</h3>
+          <div class="skills" style="margin-top:10px">
+            <span class="skill">Python</span>
+            <span class="skill">Django</span>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">SQL</span>
+            <span class="skill">Machine Learning</span>
+            <span class="skill">TensorFlow</span>
+            <span class="skill">Keras</span>
+            <span class="skill">SMOTE</span>
+            <span class="skill">Git</span>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3 style="margin-top:0">Contact</h3>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:vidyashrees742@gmail.com">vidyashrees742@gmail.com</a></li>
+            <li><strong>Phone:</strong> 9900601635</li>
+            <li><strong>Location:</strong> Bengaluru, India</li>
+            <li><strong>Resume:</strong> <a href="resume.pdf" target="_blank">Download PDF</a></li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:16px;text-align:center">
+          <a class="btn btn-primary" href="#">Hire Me</a>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      © <span id="year"></span> Vidyashree S — Professional Portfolio
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
